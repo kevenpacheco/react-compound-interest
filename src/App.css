@@ -1,4 +1,8 @@
 .containerApp {
+    width: 950px;
+
+    margin: auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,4 +13,51 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px
+}
+
+.cards .card {
+    height: 100px;
+    width: 170px;
+
+    margin: 0;
+
+    border: 4px solid rgb(221, 221, 221);
+    border-radius: 10px;
+
+    display: flex;
+    align-Items: center;
+    justify-Content: center
+}
+
+.cards .card .card-amount {
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card .card-amount span{
+    font-size: 20px;
+}
+
+.cards .card .card-data {
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .card .card-data span {
+    color: green
 }
